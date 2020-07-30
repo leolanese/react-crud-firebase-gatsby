@@ -2,6 +2,59 @@
 
 Implemented CRUD App using: React (Hooks), Gatsby, Firebase, JS, CSS and HTML.
 
+### Deployment Process:
+```javascript
+git clone https://github.com/leolanese/react-crud-firebase-gatsby.git
+cd react-crud-firebase-gatsby
+
+npm install
+gatsby develop
+
+open http://localhost:8000
+```
+
+### ERROR #98123  WEBPACK. Generating SSR bundle failed.
+```javascript
+...
+[BABEL] /Users/tyson/workspace/react-crud-firebase-gatsby/.cache/develop-static-entry.js: Cannot find module '@babel/compat-data/corejs3-shipped-proposals'
+...
+```
+
+#### Solution 1
+In case of this error, what we need is to install Babel and any other dependency requested (it could require few more depending on your SO system, configuration and setup):
+```
+npm i --save @babel/compat-data
+```
+
+#### Solution 2:
+Use this command instead the usual: "gatsby develop"
+```javascript
+npm run develop
+```
+
+##### Solution 3
+
+>Error number report is here: "ERROR #98123 WEBPACK" https://github.com/gatsbyjs/gatsby/issues/17557
+
+```
+-Remove package-lock.json and/or yarn.lock
+-Issue gatsby clean to purge any stale data.
+-Remove node_modules folder.
+-Install the dependencies again with your package manager of choice, either npm or yarn.
+-Issue gatsby develop and see if the error does not pop back.
+-These because if memory serves me right it could be some issue with a package.
+
+```
+
+##### Solution 4
+The error mentioned: "Cannot find module '@babel/compat-data/corejs3-shipped-proposals'"
+Try re- install babel global: 
+```javascript
+npm install -g --save-dev @babel/core @babel/cli
+```
+
+---
+
 ### App arquitecture
 ![Top Trumps App files](https://i.ibb.co/dmvSdcz/Screenshot-2020-07-29-at-14-48-59.png)
 
