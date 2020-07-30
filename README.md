@@ -6,12 +6,14 @@ Implemented CRUD App using: React (Hooks), Gatsby, Firebase, JS, CSS and HTML.
 ```javascript
 git clone https://github.com/leolanese/react-crud-firebase-gatsby.git
 cd react-crud-firebase-gatsby
-
 npm install
 gatsby develop
 
 open http://localhost:8000
 ```
+
+## Deployment Errors:
+Deployment is fairly simple but it will could require few more specific dependencies depending on your SO system, configuration and previous setup you have.
 
 ### ERROR #98123  WEBPACK. Generating SSR bundle failed.
 ```javascript
@@ -21,7 +23,7 @@ open http://localhost:8000
 ```
 
 #### Solution 1
-In case of this error, what we need is to install Babel and any other dependency requested (it could require few more depending on your SO system, configuration and setup):
+In case of this error, what we need is to install Babel and any other dependency requested:
 ```
 npm i --save @babel/compat-data
 ```
@@ -33,9 +35,7 @@ npm run develop
 ```
 
 ##### Solution 3
-
->Error number report is here: "ERROR #98123 WEBPACK" https://github.com/gatsbyjs/gatsby/issues/17557
-
+Error number report is here: "ERROR #98123 WEBPACK" https://github.com/gatsbyjs/gatsby/issues/17557
 ```
 -Remove package-lock.json and/or yarn.lock
 -Issue gatsby clean to purge any stale data.
@@ -43,7 +43,6 @@ npm run develop
 -Install the dependencies again with your package manager of choice, either npm or yarn.
 -Issue gatsby develop and see if the error does not pop back.
 -These because if memory serves me right it could be some issue with a package.
-
 ```
 
 ##### Solution 4
@@ -52,6 +51,19 @@ Try re- install babel global:
 ```javascript
 npm install -g --save-dev @babel/core @babel/cli
 ```
+
+
+### 'gatsby' is not recognized as an internal or external command
+```javascript
+npm i -g gatsby-cli --save-dev
+```
+
+
+### Could not find pluggin "proposal-numeric-separator"
+```javascript
+npm i @babel/compat-data@7.8.0 --save-dev
+```
+
 
 ---
 
@@ -63,9 +75,11 @@ npm install -g --save-dev @babel/core @babel/cli
 ![Gatsby running](https://i.ibb.co/t3qtx7L/Screenshot-2020-07-29-at-14-05-59.png)
 
 
-### Running on localhost:8000
-![App running](https://i.ibb.co/r6FHQbk/Screenshot-2020-07-29-at-14-08-00.png)
+### Running on MAC OSX Mojave Version 10.14.6 (localhost:8000)
+![App running MAC](https://i.ibb.co/r6FHQbk/Screenshot-2020-07-29-at-14-08-00.png)
 
+### Running on Windows 10 1903 (locahost:8000)
+![App Running WINDOWS](https://i.ibb.co/bzL6Z6J/Windows10-test.png)
 
 ### Firebase Bd
 ![Firebase setup](https://i.ibb.co/Q9WX1ZT/Screenshot-2020-07-29-at-14-26-10.png)
@@ -73,7 +87,6 @@ npm install -g --save-dev @babel/core @babel/cli
 ---
 
 ### My personal Firebase App configuration (you can use it just now or register your own)
-
 ```javascript
 const firebaseConfig = {
   apiKey: 'AIzaSyDTi-OML7L_TJF5D7lVT0mN_QosjC1-y-8',
@@ -86,5 +99,21 @@ const firebaseConfig = {
 }
 ```
 
+### Further information:
+- gatsbyjs - https://www.gatsbyjs.org/tutorial/part-zero/
+- babeljs - https://babeljs.io/setup
+
+---
+### <i>Thanks!</i>
+
+>  { 'Leo Lanese',<br>
+     'Building Inspiring Responsive Reactive Solutions',<br>
+     'London, UK' }<br>
+
+##### Twitter <a href="https://twitter.com/LeoLaneseltd" target="_blank">@LeoLaneseltd</a>
+##### Portfolio <a href="https://www.leolanese.com" target="_blank">www.leolanese.com</a>
+##### DEV.to <a href="https://www.dev.to/leolanese" target="_blank">dev.to/leolanese</a>
+##### Blog: <a href="https://www.leolanese.com/blog" target="_blank">leolanese.com/blog</a>
+##### Questions / Suggestion / Recommendation: developer@leolanese.com
 
 
