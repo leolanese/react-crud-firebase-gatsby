@@ -12,59 +12,6 @@ gatsby develop
 open http://localhost:8000
 ```
 
-## Deployment Errors:
-Deployment is fairly simple but it will could require few more specific dependencies depending on your SO system, configuration and previous setup you have.
-
-### ERROR #98123  WEBPACK. Generating SSR bundle failed.
-```javascript
-...
-[BABEL] /Users/tyson/workspace/react-crud-firebase-gatsby/.cache/develop-static-entry.js: Cannot find module '@babel/compat-data/corejs3-shipped-proposals'
-...
-```
-
-#### Solution 1
-In case of this error, what we need is to install Babel and any other dependency requested:
-```
-npm i --save @babel/compat-data
-```
-
-#### Solution 2:
-Use this command instead the usual: "gatsby develop"
-```javascript
-npm run develop
-```
-
-##### Solution 3
-Error number report is here: "ERROR #98123 WEBPACK" https://github.com/gatsbyjs/gatsby/issues/17557
-```
--Remove package-lock.json and/or yarn.lock
--Issue gatsby clean to purge any stale data.
--Remove node_modules folder.
--Install the dependencies again with your package manager of choice, either npm or yarn.
--Issue gatsby develop and see if the error does not pop back.
--These because if memory serves me right it could be some issue with a package.
-```
-
-##### Solution 4
-The error mentioned: "Cannot find module '@babel/compat-data/corejs3-shipped-proposals'"
-Try re- install babel global: 
-```javascript
-npm install -g --save-dev @babel/core @babel/cli
-```
-
-
-### 'gatsby' is not recognized as an internal or external command
-```javascript
-npm i -g gatsby-cli --save-dev
-```
-
-
-### Could not find pluggin "proposal-numeric-separator"
-```javascript
-npm i @babel/compat-data@7.8.0 --save-dev
-```
-
-
 ---
 
 ### App arquitecture
