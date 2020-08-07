@@ -1,15 +1,16 @@
 import 'firebase/firestore';
 
 
-// react-crud-firebase
+// firebase dB
+// Please register your firebase instance and replace the firebaseConfig
 const firebaseConfig = {
-  apiKey: "AIzaSyDTi-OML7L_TJF5D7lVT0mN_QosjC1-y-8",
-  authDomain: "react-crud-firebase-1a58c.firebaseapp.com",
-  databaseURL: "https://react-crud-firebase-1a58c.firebaseio.com",
+  apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXX",
+  authDomain: "XXXXXXXXXXXXXXXXXXXXXXXXX.firebaseapp.com",
+  databaseURL: "https://XXXXXXXXXXXXXXXXXXXXXXXXX.firebaseio.com",
   projectId: "react-crud-firebase-1a58c",
   storageBucket: "react-crud-firebase-1a58c.appspot.com",
-  messagingSenderId: "939482785604",
-  appId: "1:939482785604:web:efc98fd2dd19061b355911"
+  messagingSenderId: "XXXXXXXXXXXXXXXXXXXXXXXXX",
+  appId: "XXXXXXXXXXXXXXXXXXXXXXXXX"
 };
 
 let firebaseInstance;
