@@ -28,8 +28,6 @@ open http://localhost:8000
 ### Running on Windows 10 1903 (locahost:8000)
 ![App Running WINDOWS](https://i.ibb.co/bzL6Z6J/Windows10-test.png)
 
-### Firebase Bd
-![Firebase setup](https://i.ibb.co/Q9WX1ZT/Screenshot-2020-07-29-at-14-26-10.png)
 
 ---
 
