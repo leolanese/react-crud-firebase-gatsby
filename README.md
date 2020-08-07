@@ -1,6 +1,6 @@
-### Top Trumps App
+### React CRUD
 
-Implemented CRUD App using: React (Hooks), Gatsby, Firebase, JS, CSS and HTML.
+Implemented CRUD App using: React (Hooks), Gatsby (SSR), Firebase (dB), JS, CSS and HTML.
 
 ### Deployment Process:
 ```javascript
